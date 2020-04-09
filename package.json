@@ -1,0 +1,20 @@
+{
+    "name": "push-notification-service",
+    "version": "1.0.0",
+    "description": "service for roadmaps",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danielacortesthoughtworkks/roadmaps-service"
+    },
+    "dependencies": {
+        "fastify": "2.11.0"
+    },
+    "devDependencies": {
+        "jest": "^25.3.0"
+    },
+    "scripts": {
+        "start": "node src/server",
+        "test": "jest"
+    }
+}
