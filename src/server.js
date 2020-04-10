@@ -1,5 +1,5 @@
 // Require the framework and instantiate it
-const roadmaps = require('./api/roadmaps')
+const roadmaps = require('./api/routes/roadmaps')
 const fastify = require('fastify')({ logger: true })
 
 // Declare a route

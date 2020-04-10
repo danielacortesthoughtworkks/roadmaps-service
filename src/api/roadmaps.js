@@ -1,7 +1,7 @@
 module.exports = async function(fastify){
   fastify.route({
     method: 'GET',
-    url: '/hello',
+    url: '/holi',
     schema: {
 
     },
