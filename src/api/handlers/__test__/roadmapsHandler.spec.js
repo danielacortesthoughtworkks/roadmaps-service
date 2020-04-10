@@ -4,10 +4,10 @@ const reply = {
   send: jest.fn()
 }
 
-it('should returns a hello world when request is fine', () => {
+it('should return frontend developer description when request is okay', () => {
   roadmapsHandler({}, reply)
 
   expect(reply.send).toHaveBeenCalledWith({
-    name: 'Roadmap1', description:'Holi'
+    name: 'Frontend Developer', description: 'Step by step guide to becoming a modern frontend developer'
   })
 })

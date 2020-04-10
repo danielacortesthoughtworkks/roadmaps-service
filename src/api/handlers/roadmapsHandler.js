@@ -1,5 +1,5 @@
 const roadmapsHandler = function (request, reply) {
-  reply.send({ name: 'Roadmap1', description: 'Holi' })
+  reply.send({ name: 'Frontend Developer', description: 'Step by step guide to becoming a modern frontend developer' })
 }
 
 module.exports = {
