@@ -1,18 +1,17 @@
 const roadmapsSchema = {
-  schema: {
-    response: {
-      200: {
-        type: 'object',
-        properties: {
-          name: { type: 'string' },
-          description: { type: 'string' }
-
-        }
-      }
-    }
-  }
+    schema: {
+        response: {
+            200: {
+                type: 'object',
+                properties: {
+                    name: { type: 'string' },
+                    description: { type: 'string' },
+                },
+            },
+        },
+    },
 }
 
 module.exports = {
-  roadmapsSchema
+    roadmapsSchema,
 }
