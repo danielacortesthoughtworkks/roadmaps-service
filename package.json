@@ -8,7 +8,11 @@
         "url": "https://github.com/danielacortesthoughtworkks/roadmaps-service"
     },
     "dependencies": {
-        "fastify": "2.11.0"
+        "fastify": "2.11.0",
+        "pg": "^8.0.3",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^5.21.7",
+        "sequelize-cli": "^5.5.1"
     },
     "devDependencies": {
         "husky": "^4.2.5",
