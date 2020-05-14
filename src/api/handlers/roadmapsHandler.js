@@ -1,17 +1,16 @@
-const Sequelize = require('sequelize');
-//const db = require('../../../database/models/index') 
-const Roadmaps  = require('../../../database/models/roadmaps')
+const { Roadmap, Topic } = require('../../../database/models/index')
 const roadmapsHandler = async function (request, reply) {
-    //console.log(db);
-    let roadmaps = await Roadmaps.findAll();
-    reply.send({
-        name: 'Frontend Developer',
-        description: `${roadmaps}`
-        
+    const roadmaps = await Roadmap.findAll({
+        include: [
+            {
+                model: Topic,
+                required: false,
+            },
+        ],
     })
+    reply.send(roadmaps)
 }
 
 module.exports = {
     roadmapsHandler,
 }
-

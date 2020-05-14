@@ -3,15 +3,11 @@
 module.exports = {
     up: (queryInterface, Sequelize) =>
         queryInterface.bulkInsert(
-            'Roadmap',
+            'RoadmapTopic',
             [
                 {
-                    name: 'Roadmap 1',
-                    createdAt: new Date(),
-                    updatedAt: new Date(),
-                },
-                {
-                    name: 'Roadmap 2',
+                    roadmapId: 1,
+                    topicId: 1,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -20,5 +16,5 @@ module.exports = {
         ),
 
     down: (queryInterface, Sequelize) =>
-        queryInterface.bulkDelete('Roadmap', null, {}),
+        queryInterface.bulkDelete('RoadmapTopic', null, {}),
 }
