@@ -6,15 +6,16 @@ module.exports = {
             'RoadmapTopic',
             [
                 {
-                    roadmapId: 1,
-                    topicId: 1,
+                    roadmapId: 3,
+                    topicId: 3,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
+                
             ],
             {}
         ),
 
     down: (queryInterface, Sequelize) =>
-        queryInterface.bulkDelete('RoadmapTopic', null, {}),
+        queryInterface.bulkDelete('Topic', null, {}),
 }

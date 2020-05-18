@@ -1,6 +1,6 @@
 const { roadmapsSchema } = require('../../schemas/roadmapsSchema')
 const { roadmapsHandler } = require('../../handlers/roadmapsHandler')
-const roadmaps = require('../../routes/roadmaps')
+const roadmap = require('../../routes/roadmap')
 
 jest.mock('../../handlers/roadmapsHandler')
 
@@ -9,11 +9,11 @@ const fastifyMock = {
 }
 
 test('Should get roadmaps', async () => {
-    await roadmaps(fastifyMock)
+    await roadmap(fastifyMock)
 
     expect(fastifyMock.route).toHaveBeenCalledWith({
         method: 'GET',
-        url: '/roadmaps',
+        url: '/roadmap',
         schema: {
             schema: {
                 response: {

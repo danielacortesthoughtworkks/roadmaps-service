@@ -10,6 +10,9 @@ module.exports = (sequelize, DataTypes) => {
     Roadmap.associate = function (models) {
         Roadmap.belongsToMany(models.Topic, {
             through: 'RoadmapTopic',
+        }),
+        Roadmap.belongsToMany(models.User, {
+            through: 'RoadmapUser',
         })
     }
     return Roadmap

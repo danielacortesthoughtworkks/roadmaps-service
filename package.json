@@ -11,6 +11,7 @@
         "fastify": "2.11.0",
         "pg": "^8.0.3",
         "pg-hstore": "^2.3.3",
+        "prompt-sync": "^4.2.0",
         "sequelize": "^5.21.7",
         "sequelize-cli": "^5.5.1"
     },
@@ -22,6 +23,10 @@
     },
     "scripts": {
         "start": "node src/server",
-        "test": "jest"
+        "test": "jest",
+        "migrate": "npx sequelize-cli db:migrate",
+        "undo:migrate": "npx sequelize-cli db:migrate:undo:all",
+        "seed": "npx sequelize-cli db:seed:all",
+        "undo:seed": "npx sequelize-cli db:seed:undo:all"
     }
 }
