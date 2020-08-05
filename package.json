@@ -8,7 +8,7 @@
         "url": "https://github.com/danielacortesthoughtworkks/roadmaps-service"
     },
     "dependencies": {
-        "fastify": "2.11.0",
+        "fastify": "2.15.1",
         "pg": "^8.0.3",
         "pg-hstore": "^2.3.3",
         "prompt-sync": "^4.2.0",
